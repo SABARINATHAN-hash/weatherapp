@@ -1,0 +1,172 @@
+*{
+    font-family: 'poppins';
+    
+}
+body{
+    background-color: black;
+}
+.card{
+    background: linear-gradient(135deg,#2980b9,#6dd5fa);
+    width: 80%;
+    max-width: 470px;
+    border-radius: 30px;
+    justify-content: center;
+    color: #ffff;
+    margin: 55px auto 20px ;
+    text-align: center;
+    padding: 30px;
+    
+}
+.search{
+    display: flex;
+    justify-content: space-evenly;
+}
+.search input{
+    border: 0;
+    outline: 0;
+    width: 50%;
+    height: 45px;
+    border-radius: 30px;
+    padding-left: 30px;
+}
+.search button{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    
+}
+.search button img{
+    width: 16px;
+}
+.weather{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.weather .weathericon{
+    width: 30%;
+}
+.weather .temp{
+    font-weight: 400;
+    font-size: 45px;
+    margin-bottom: -40px;
+   
+}
+.weather .city{
+    font-weight: 500;
+    font-size: 30px;
+   
+}
+.details{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+   
+}
+
+.col{
+    display: flex;
+    text-align: left; 
+}
+.col .Humi{
+    margin-left:10px ;
+    font-family: 14px;
+    font-weight: 400;
+}
+.col .Humidity{
+    display: flex;
+    margin-left: 5px;
+    text-align: center;
+}
+.col img{
+    width: 20%;
+}
+
+.col .wind{
+    padding: 0 10px;
+    font-weight: 400;
+    font-size: 18px;
+}
+.weather{
+    display: none;
+}
+.error{
+    font-size: 13px;
+    font-weight: 400;
+    display: none;
+    text-align: start
+
+}
+footer{
+    color: #ffff;
+    text-align: center;
+}
+a:link{
+   color: azure;
+   text-decoration: none;
+   font-weight: 500;
+}
+
+
+@media  (min-width:318px) and (max-width:600px)   {
+      .search input{
+        width: 80%;
+      }
+      
+      .details{
+        justify-content: space-between;
+      }
+      
+      .col{
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+      }
+      .col img{
+        width: 30%;
+      }
+      .col .windicon{
+        width: 40%;
+        
+      }
+      .col .Humi{
+         padding-right: 150px;
+        font-size: 10px;
+        font-weight: 600;
+
+      }
+      .col .wind{
+        padding-right: 80px;
+        font-size: 10px;
+        font-weight: 600;
+      }
+      .col p{
+        margin-top: -10px;
+      }
+      .card{
+        max-width: 280px;
+      }
+
+      
+      
+      
+}
+@media  (min-width:318px) and (max-width:600px) {
+    .search button{
+        height: 40px;
+        width: 40px;
+        border-radius: 50%;
+        
+    }
+ 
+
+}
+
+
+
+
+
